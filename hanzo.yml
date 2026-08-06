@@ -1,0 +1,6 @@
+# ClickHouse driver mock. Go module, no image.
+# Its own suite is the gate: the mock only earns its keep if it still satisfies
+# the driver interfaces and its expectations still match.
+test:
+  - name: test
+    run: go test -race ./...
